@@ -39,7 +39,7 @@ export default function AddProduct() {
     } else {
       try {
         const res = await axios.post(
-          "http://localhost:5000/api/product/create",
+          "/api/product/create",
           product
         );
         navigate("/supplier")
@@ -68,7 +68,7 @@ export default function AddProduct() {
       formData.append("file", file);
 
       const res = await axios.post(
-        "http://localhost:5000/api/categoryImageUpload",
+        "/api/categoryImageUpload",
         formData,
         {
           headers: {

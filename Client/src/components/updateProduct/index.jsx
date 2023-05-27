@@ -52,7 +52,7 @@ export default function UpdateProduct() {
 		} else {
 			try {
 				const res = await axios.put(
-					`http://localhost:5000/api/product/update/${productId}`,
+					`/api/product/update/${productId}`,
 					product,
 				);
 				console.log(res);
@@ -70,7 +70,7 @@ export default function UpdateProduct() {
 
 	async function fetchData() {
 		const response = await axios.get(
-			`http://localhost:5000/api/product/get/${productId}`,
+			`/api/product/get/${productId}`,
 		);
 		setProduct(response.data.data);
 	}
@@ -89,7 +89,7 @@ export default function UpdateProduct() {
 			formData.append("file", file);
 
 			const res = await axios.post(
-				"http://localhost:5000/api/categoryImageUpload",
+				"/api/categoryImageUpload",
 				formData,
 				{
 					headers: {

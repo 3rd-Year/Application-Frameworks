@@ -26,7 +26,7 @@ export default function MediaCard() {
   const getPrducts = async () => {
     await axios
       .get(
-        `http://localhost:5000/api/product/getAll`
+        `/api/product/getAll`
       )
       .then((res) => {
         console.log(res);
