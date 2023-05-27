@@ -208,7 +208,7 @@ const Register = () => {
 			setImage(res.data.url);
 			setFormValues({
 				...formValues,
-				url: res.data.url,
+				url: "https://res.cloudinary.com/dkzx8v24n/image/upload/v1683624730/CategoryImages/eqregqosz71tjgeqdcdx.jpg",
 			});
 		} catch (error) {
 			console.log(error);
