@@ -98,7 +98,7 @@ const Register = () => {
 				mobile: formValues.mobile,
 				nationality: nationality,
 				nic_passport: formValues.nic,
-				url: formValues.url,
+				url: "https://res.cloudinary.com/dkzx8v24n/image/upload/v1683624730/CategoryImages/eqregqosz71tjgeqdcdx.jpg",
 				address_country: formValues.address,
 				gender: gender,
 				password: formValues.password,
