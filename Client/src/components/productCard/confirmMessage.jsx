@@ -26,7 +26,7 @@ export default function ConfirmMessage({productId,reFetch,setReFetch}) {
   const handleDeleteProduct = async () => {
     try {
       const res = await axios.delete(
-        `http://localhost:5000/api/product/delete/${productId}`,
+        `/api/product/delete/${productId}`,
       )
       setOpen(false);
       setReFetch(!reFetch)
