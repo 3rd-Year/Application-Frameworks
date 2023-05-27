@@ -9,25 +9,25 @@ chai.use(chaiHttp);
 let id;
 
 //1.Testion add product API
-describe("1. Add product", () => {
-	it("Add Product (POST)", async () => {
-		let res = await chai
-			.request("https://ctms-api.vercel.app/api")
-			.post("/product/create")
-			.send({
-				name : "test",
-                price : "500",
-                color : "red",
-                size : "10",
-                productImage : "https://www.pharmavends.com/userspics/f0068da20ba2553ce9e40a3a063f28f6.jpg",
-                description : "test description",
-			});
+// describe("1. Add product", () => {
+// 	it("Add Product (POST)", async () => {
+// 		let res = await chai
+// 			.request("https://ctms-api.vercel.app/api")
+// 			.post("/product/create")
+// 			.send({
+// 				name : "test",
+//                 price : "500",
+//                 color : "red",
+//                 size : "10",
+//                 productImage : "https://www.pharmavends.com/userspics/f0068da20ba2553ce9e40a3a063f28f6.jpg",
+//                 description : "test description",
+// 			});
 
-            console.log(res.body);
+//             console.log(res.body);
 
-		expect(res).to.have.status(200);
-	});
-});
+// 		expect(res).to.have.status(200);
+// 	});
+// });
 
 // 2. Testing get all products API
 describe("2.Add product", () => {

@@ -13,7 +13,7 @@ cloudinary.config({
 });
 
 // Upload image
-Router.post("http://localhost:5000/api/imageUpload", (req, res) => {
+Router.post("/api/imageUpload", (req, res) => {
 	try {
 		if (!req.files || Object.keys(req.files).length === 0)
 			return res

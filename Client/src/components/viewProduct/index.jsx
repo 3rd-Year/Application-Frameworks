@@ -13,7 +13,7 @@ const [open, setOpen] = React.useState(false);
 
 
 useEffect(()=>{
-axios.get(`http://localhost:5000/api/product/get/${id}`).then(response =>{
+axios.get(`/api/product/get/${id}`).then(response =>{
 setProduct(response.data.data);
 }).catch(error =>{
   setError(error.response.data);
