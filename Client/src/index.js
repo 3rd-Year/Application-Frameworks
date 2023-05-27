@@ -4,7 +4,7 @@ import App from "./App";
 import axios from "axios";
 import { ThemeProvider } from "@emotion/react";
 import CTheme from "./components/theme/CTheme";
-//axios.defaults.baseURL = "https://ctms-api.vercel.app";
+axios.defaults.baseURL = "https://ctms-api.vercel.app";
 
 ReactDOM.render(
 	<React.StrictMode>
