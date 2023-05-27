@@ -94,7 +94,7 @@ function App() {
 			<Router>
 				<Header />
 				<Routes>
-					{role === "admin" && login ? (
+					{/* {role === "admin" && login ? ( */}
 						<>
 							<Route
 								path="/supplier"
@@ -163,9 +163,9 @@ function App() {
 								element={<ForbiddenPage />}
 							/>
 						</>
-					) : (
+					{/* ) : (
 						<></>
-					)}
+					)} */}
 
 					{role === "user" && login ? (
 						<>
