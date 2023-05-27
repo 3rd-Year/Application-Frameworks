@@ -64,7 +64,7 @@ app.get("/", (req, res) => {
 
 app.use("/api/auth", authRoute);
 app.use("/api/user", userRoute);
-app.use("/api/product", productRoute);
+app.use(productRoute);
 app.use("/api", imageUploadRoute);
 app.use("/api", categoryImageRoute);
 app.use("/api/user", profileImageRoute);

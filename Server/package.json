@@ -8,7 +8,8 @@
 	},
 	"scripts": {
 		"start": "nodemon index.js",
-		"testuser": "npx mocha --timeout 1000 ./src/__Test__/userTestCases.js"
+		"testuser": "npx mocha --timeout 1000 ./src/__Test__/userTestCases.js",
+		"testproduct": "npx mocha --timeout 1000 ./src/__Test__/productTestCases.js"
 	},
 	"author": "Bug Squashers",
 	"license": "ISC",
